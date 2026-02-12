@@ -1,36 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Burak Yilmaz | AI & Embedded Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burak Yilmaz | AI Systems & Embedded</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="container">
+    <header class="card">
+      <h1>Burak Yilmaz</h1>
+      <p class="subtitle">AI Systems • Embedded Firmware • Backend Engineering</p>
+      <p class="summary">
+        IT Analyst transitioning into software/embedded roles. I build real systems:
+        private RAG assistants (FastAPI + LLMs), secure networking apps, and STM32 firmware projects.
+      </p>
 
-<h1>Burak Yilmaz</h1>
+      <div class="cta">
+        <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <a class="btn ghost" href="mailto:YOUR_EMAIL_HERE">Email</a>
+        <a class="btn ghost" href="https://github.com/Changer0001" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </header>
 
-<p>
-IT Analyst transitioning into AI Systems, Embedded Software,
-and Intelligent Backend Engineering.
-</p>
+    <main class="grid">
+      <section class="card">
+        <h2>Featured Projects</h2>
 
-<h2>Featured Projects</h2>
+        <div class="project">
+          <div>
+            <h3>YAP — Your AI Partner</h3>
+            <p>Private AI assistant for SMBs using RAG, user auth, chat history, and streaming LLM responses.</p>
+            <p class="tags">FastAPI • SQLite • ChromaDB • JWT • vLLM</p>
+          </div>
+          <a class="btn small" href="projects/yap.html">View</a>
+        </div>
 
-<ul>
-<li><b>YAP – Your AI Partner</b><br>
-Private AI assistant with FastAPI, RAG, and LLM streaming.</li>
+        <div class="project">
+          <div>
+            <h3>STM32 Firmware Lab</h3>
+            <p>Hands-on embedded projects on Nucleo-F446RE: GPIO, timers, interrupts, UART.</p>
+            <p class="tags">C • STM32 • Bare-metal • Debugging</p>
+          </div>
+          <a class="btn small" href="projects/stm32.html">View</a>
+        </div>
 
-<li><b>STM32 Embedded Projects</b><br>
-Bare-metal and HAL firmware development on Nucleo-F446RE.</li>
+        <div class="project">
+          <div>
+            <h3>Secure UDP Chat</h3>
+            <p>Encrypted real-time messaging using hybrid RSA + AES, plus integrity checks.</p>
+            <p class="tags">Python • Sockets • RSA • AES • HMAC</p>
+          </div>
+          <a class="btn small" href="projects/secure-chat.html">View</a>
+        </div>
+      </section>
 
-<li><b>Secure UDP Chat</b><br>
-Encrypted client-server messaging using RSA + AES.</li>
-</ul>
+      <section class="card">
+        <h2>What I’m targeting</h2>
+        <ul class="list">
+          <li>Embedded Software Engineer (firmware + peripherals)</li>
+          <li>Verification / Systems Integration (firmware side)</li>
+          <li>LLM / AI Systems Engineer (RAG + backend)</li>
+        </ul>
 
-<h2>Skills</h2>
-<p>
-Python • FastAPI • C • STM32 • LLM Engineering • Networking • RAG Systems
-</p>
+        <h2 style="margin-top:18px;">Skills</h2>
+        <p class="tags">
+          Python • FastAPI • C • STM32 • Networking • Linux basics • SQL • Git • RAG • vLLM
+        </p>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <p>© <span id="y"></span> Burak Yilmaz</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
